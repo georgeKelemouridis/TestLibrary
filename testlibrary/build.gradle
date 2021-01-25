@@ -4,6 +4,15 @@ plugins {
     id 'maven-publish'
 }
 
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+group = 'com.studentbeans.testlibrary'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
