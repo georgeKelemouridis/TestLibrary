@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val libraryActivity = LibraryActivity(applicationContext, "Helloooooooooooo")
+        val libraryActivity = LibraryActivity(applicationContext)
 
         findViewById<AppCompatButton>(R.id.button).setOnClickListener {
             libraryActivity.showToast()
